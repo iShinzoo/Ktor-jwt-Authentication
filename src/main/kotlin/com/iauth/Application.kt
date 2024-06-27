@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
 @Suppress("unused")
 fun Application.module() {
 
-    val mongoPW = System.getenv("MONGO_PW")
+    val mongopw = System.getenv("MONGO_PW")
     val db = KMongo.createClient(
         connectionString = "mongodb+srv://krishna:$mongoPW@cluster0.lj3dy13.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     ).coroutine
